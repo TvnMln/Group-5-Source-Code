@@ -2,7 +2,7 @@
 CC103: Introduction to Programming 1 (Final Project)
 
 MEMBERS: 
-Delos Santos, Steven 
+Delos Santos, Steven
 Galvez, Hanz Kobe
 Kimura, Yuhji Paul
 Marquez, Nathan Reigh
