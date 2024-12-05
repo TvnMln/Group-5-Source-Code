@@ -1,5 +1,4 @@
 package CC103;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +6,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class FinalProject {
 	static int[][] drink = new int[5][3];
 	static int[] pastry = new int [3];
