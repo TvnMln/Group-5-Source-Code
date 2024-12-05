@@ -474,5 +474,4 @@ public class FinalProject {
 		totalDrinks = 0;
 		totalOrder = 0;
 		totalCost = 0;
-	}	
-}
+	}	}
