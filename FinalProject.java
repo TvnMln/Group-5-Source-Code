@@ -1,4 +1,4 @@
-package yuhji;
+package CC103;
 
 import java.io.BufferedReader;
 import java.io.File;
