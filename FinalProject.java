@@ -109,11 +109,15 @@ public class FinalProject {
 		while(true) {
 			try{
 				input = Integer.parseInt(scan.nextLine());
-				if(input < 0) throw new Exception();
+				if(input < 0) {
+					input = -1;
+					throw new Exception();
+				}
 				return(input);
 			}
 			catch(Exception e) {
-				return(-1);
+				if(input == -1) return(-1);
+				else return(-2);
 			}
 		}
 	}
@@ -150,13 +154,13 @@ public class FinalProject {
 		if(input >= 1 && input <=5) {	
 			int size = 0;
 			for(int i = 1; !(input == i-1); choice = i-1, ++i);
-			System.out.println("Typing any invalid input will exit this choice.");
+			System.out.println("Typing any NEGATIVE number will exit this choice.");
 	    	System.out.print(" [1] byte\n [2] int\n [3] long\nWhat size would you like: ");
 	    	while(!(input == -1)) {
 	    		input = checkValidity(scan, input);
 		    	if(input == 1 || input == 2 || input == 3){
 					size = (input == 1) ? 0 : (input == 2)? 1 : 2;
-					System.out.println("Typing any invalid input will exit this choice.");
+					System.out.println("Typing any NEGATIVE number will exit this choice.");
 		    		System.out.print("How many "+sizes[size]+"-sized "+drinkList[choice]+"s would you like: ");
 		    		while(!(input == -1)) {
 		    			input = checkValidity(scan, input);
@@ -172,7 +176,7 @@ public class FinalProject {
 		}
 		else {
 			for(int i = 1; !(input == i+5); choice = i, ++i);
-			System.out.println("Typing any invalid input will exit this choice.");
+			System.out.println("Typing any NEGATIVE number will exit this choice.");
 			System.out.print("How many "+pastryList[choice]+" would you like: ");
 			while(true) {
 				input = checkValidity(scan, input);
